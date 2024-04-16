@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/wolny/pytorch-3dunet/archive/refs/tags/{{ version }}.tar.gz
-  sha256: d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed
+  sha256: 406042cb20d2a68c96ef8b9dfb2b7b3e51cf8d40cf928e8441ff000057bdb43e
 
 build:
   noarch: python
