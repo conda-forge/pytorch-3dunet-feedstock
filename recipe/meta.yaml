@@ -1,4 +1,4 @@
-{% set version = "1.8.7" %}
+{% set version = "1.9.0" %}
 
 package:
   name: pytorch-3dunet
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/wolny/pytorch-3dunet/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 2f2d5e31439e1af7a35fd7301dc7ebfc683883ec6885b64aa782866558378a5a
+  sha256: 6c24aa2452c8efd99163028c83c195627a6185f96c5f924c5681b1c4cb74e189
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
   host:
     - python >=3.9
     - pip
+    - setuptools
   run:
     - python >=3.9
     - pytorch
