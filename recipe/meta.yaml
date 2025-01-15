@@ -11,18 +11,18 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
   entry_points:
     - predict3dunet = pytorch3dunet.predict:main
     - train3dunet = pytorch3dunet.train:main
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - pytorch
     - tensorboard
     - tqdm
@@ -39,6 +39,7 @@ test:
     - pytorch3dunet.datasets
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
