@@ -1,4 +1,4 @@
-{% set version = "1.9.0" %}
+{% set version = "1.9.1" %}
 
 package:
   name: pytorch-3dunet
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/wolny/pytorch-3dunet/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 6c24aa2452c8efd99163028c83c195627a6185f96c5f924c5681b1c4cb74e189
+  sha256: deca7893e7bdbfff7a3330b05816bdf6e8c265df9a3ea8a5561e9247647e0273
 
 build:
   noarch: python
