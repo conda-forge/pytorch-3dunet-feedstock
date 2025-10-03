@@ -1,4 +1,4 @@
-{% set version = "1.9.5" %}
+{% set version = "1.9.6" %}
 
 package:
   name: pytorch-3dunet
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/wolny/pytorch-3dunet/archive/refs/tags/{{ version }}.tar.gz
-  sha256: e24049f7e228763272220fdc2820d5d6f14f64fe5920c6df1f167219005403a8
+  sha256: a6c79af41991c88577d83aaa1d95ff64ca5967b8441a48e91d922e79a41a60b3
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
   entry_points:
     - predict3dunet = pytorch3dunet.predict:main
     - train3dunet = pytorch3dunet.train:main
